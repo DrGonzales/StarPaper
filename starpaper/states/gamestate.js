@@ -22,8 +22,7 @@ StarPaper.GameState = {
     },
 
     create: function () {
-        StarPaper.Audio = {};
-        StarPaper.Audio.Gun = this.add.audio('fire');
+      
         this.music = this.add.audio('soundtrak');
         this.music.play();
         this.music.loopFull(1);

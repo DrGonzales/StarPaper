@@ -26,7 +26,7 @@ StarPaper.SingleBulletGun.prototype.constructor = StarPaper.SingleBulletGun;
 StarPaper.SingleBulletGun.prototype.fire = function (source) {
 
     if (this.game.time.time < this.nextFire) { return; }
-    StarPaper.Audio.Gun.play();
+
     var x = source.x + 10;
     var y = source.y + 10;
 
