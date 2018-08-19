@@ -1,4 +1,4 @@
-var StarPaper =  StarPaper || {};
+var StarPaper = StarPaper || {};
 
 /*
 Einzelschuss
@@ -8,12 +8,11 @@ StarPaper.SingleBulletGun = function (game) {
     Phaser.Group.call(this, game, game.world, 'Single Bullet Gun', false, true, Phaser.Physics.ARCADE);
 
     this.nextFire = 0;
-    this.bulletSpeed = 400;
-    this.fireRate = 320;
+    this.bulletSpeed = 600;
+    this.fireRate = 100;
 
-    for (var i = 0; i < 64; i++)
-    {
-        this.add(new StarPaper.Bullet(game, 'bullet_1' ), true);
+    for (var i = 0; i < 64; i++) {
+        this.add(new StarPaper.Bullet(game, 'bullet_1', true, 0), true);
     }
 
     return this;
